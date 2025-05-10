@@ -460,7 +460,7 @@ export class AIOStreams {
       logger.info(`Received ${initialStreams.length} streams to clean`);
       const streamsGroupedByFilename = groupStreamsByKey(
         initialStreams,
-        (stream) => normaliseFilename(stream.filename)
+        (_) => undefined
       );
 
       logger.info(
